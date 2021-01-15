@@ -1,0 +1,142 @@
+@import url('https://fonts.googleapis.com/css?family=Quicksand:400,500,700&display=swap');
+
+$border-color: gray;
+$border-focus-color: rgba(209, 123, 123, 0.5);
+$light-red: rgba(218, 92, 81, 0.5);
+$darker-red: rgba(218, 92, 82, 0.6);
+
+body {
+    margin: 0;
+    font-family: 'Quicksand', 'Segoe UI', sans-serif !important;
+    background: rgba(0, 0, 0, 0.15);
+}
+
+.todo-form {
+    #submit-todo {
+        background: #db4c3f;
+        font-weight: bold;
+        color: white;
+        border-radius: 0.5rem;
+        border: 2px solid transparent;
+
+        &:hover {
+            background: #fa5748;
+            // border: 2px solid #fa5748;
+            // color: #fa5748;
+        }
+
+        &:disabled {
+            opacity: 0.5;
+        }
+    }
+
+    #todo-input {
+        border-radius: 0.5rem;  
+        border: 2px solid $border-color;
+        border-bottom: 3px solid $border-color;
+        opacity: 0.7;
+        transition: 0.25s;
+        transform: scale(0.95);
+        font-weight: bold;
+        color: gray;
+
+        &:focus {
+            transform: scale(1);
+            opacity: 1;
+            border: 2px solid $border-focus-color;
+            border-bottom: 3px solid $border-focus-color;
+            box-shadow: 0px 3px 5px -1px rgba(0, 0, 0, 0.15);
+        }
+
+        &::placeholder {
+            opacity: inherit;
+            transition: 0.25s;
+        }
+
+        &:focus::placeholder {
+            opacity: 0.65;
+        }
+    }
+}
+
+.todo-list {
+    li.list-group-item {
+        background: $light-red;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        font-weight: bold;
+        color: rgb(73, 73, 73);
+        border: 2px solid transparent !important;
+        transition: 0.35s;
+
+        &:hover {
+            // TODO: Hover effect
+            border: 2px solid transparent !important;
+            background: darken($light-red, 5%);
+        }
+
+        &:nth-child(2n+1) {
+            background: $darker-red;
+
+            &:hover {
+                background: lighten($darker-red, 5%);
+            }
+        }
+
+        &.completed {
+            background: gray;
+
+            &:hover {
+                background: darken(gray, 5%);
+            }
+
+            &:nth-child(2n+1) {
+                background: darkgray;
+
+                &:hover {
+                    background: darken(darkgray, 5%);
+                }
+            }
+
+            button.btn {
+                color: white;
+            }
+
+            div {
+                color: white;
+                text-decoration: line-through;
+            }
+
+            .fas.fa-check {
+                color: rgb(135, 221, 188);
+                margin-right: .5rem;
+                opacity: 1;
+                transform: rotate(0deg);
+            }
+        }
+
+        div {
+            cursor: pointer;
+        }
+
+        button.btn {
+            font-size: 1.25rem;
+            transition: 0.2s;
+
+            &:hover {
+                color: white;
+                transform: rotate(90deg);
+            }
+        }
+
+        .fas.fa-check {
+            opacity: 0;
+            font-weight: 500;
+            color: rgb(135, 221, 188);
+            transition: 0.35s !important;
+            margin-right: -0.8rem;
+        }
+
+    }
+}

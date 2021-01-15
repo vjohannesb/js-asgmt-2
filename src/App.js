@@ -1,14 +1,19 @@
+import React, { useState } from 'react';
+
 import Form from "./components/Form";
 import List from "./components/List";
 
 function App() {
+
+  const [todos, setTodos] = useState([])
+
   return (
-    <div className="App">
-      <div className="container-md">
-          <Form />
-          <List />
-      </div>
-    </div>
+    <>
+      <main className="container-md">
+        <Form todos={todos} setTodos={setTodos}/>
+        <List todos={todos} setTodos={setTodos} />
+      </main>
+    </>
   );
 }
 
