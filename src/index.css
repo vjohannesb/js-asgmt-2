@@ -2,7 +2,6 @@
 body {
   margin: 0;
   font-family: 'Quicksand', 'Segoe UI', sans-serif !important;
-  background: rgba(0, 0, 0, 0.15);
 }
 
 .todo-form #submit-todo {
