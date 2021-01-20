@@ -1,8 +1,8 @@
 {
   "files": {
-    "main.css": "/js-uppgift-2/static/css/main.8ad9513d.chunk.css",
-    "main.js": "/js-uppgift-2/static/js/main.abe9e5b7.chunk.js",
-    "main.js.map": "/js-uppgift-2/static/js/main.abe9e5b7.chunk.js.map",
+    "main.css": "/js-uppgift-2/static/css/main.e355af68.chunk.css",
+    "main.js": "/js-uppgift-2/static/js/main.13f30197.chunk.js",
+    "main.js.map": "/js-uppgift-2/static/js/main.13f30197.chunk.js.map",
     "runtime-main.js": "/js-uppgift-2/static/js/runtime-main.4a06f994.js",
     "runtime-main.js.map": "/js-uppgift-2/static/js/runtime-main.4a06f994.js.map",
     "static/css/2.d65fdcc0.chunk.css": "/js-uppgift-2/static/css/2.d65fdcc0.chunk.css",
@@ -10,14 +10,14 @@
     "static/js/2.013c8975.chunk.js.map": "/js-uppgift-2/static/js/2.013c8975.chunk.js.map",
     "index.html": "/js-uppgift-2/index.html",
     "static/css/2.d65fdcc0.chunk.css.map": "/js-uppgift-2/static/css/2.d65fdcc0.chunk.css.map",
-    "static/css/main.8ad9513d.chunk.css.map": "/js-uppgift-2/static/css/main.8ad9513d.chunk.css.map",
+    "static/css/main.e355af68.chunk.css.map": "/js-uppgift-2/static/css/main.e355af68.chunk.css.map",
     "static/js/2.013c8975.chunk.js.LICENSE.txt": "/js-uppgift-2/static/js/2.013c8975.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.4a06f994.js",
     "static/css/2.d65fdcc0.chunk.css",
     "static/js/2.013c8975.chunk.js",
-    "static/css/main.8ad9513d.chunk.css",
-    "static/js/main.abe9e5b7.chunk.js"
+    "static/css/main.e355af68.chunk.css",
+    "static/js/main.13f30197.chunk.js"
   ]
 }
