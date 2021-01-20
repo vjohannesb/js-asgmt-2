@@ -34,14 +34,12 @@ body {
         border-radius: 0.5rem;  
         border: 2px solid $border-color;
         border-bottom: 3px solid $border-color;
-        opacity: 0.7;
+        opacity: 0.7; 
         transition: 0.25s;
-        transform: scale(0.95);
         font-weight: bold;
         color: gray;
 
         &:focus {
-            transform: scale(1);
             opacity: 1;
             border: 2px solid $border-focus-color;
             border-bottom: 3px solid $border-focus-color;
@@ -49,7 +47,7 @@ body {
         }
 
         &::placeholder {
-            opacity: inherit;
+            opacity: 0.7;
             transition: 0.25s;
         }
 
