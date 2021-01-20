@@ -26,12 +26,12 @@ const Form = ({ todos, setTodos }) => {
                 <div className="row mt-3 justify-content-center align-items-center g-2">
                     <div className="col-12 col-sm-9 col-xl-8">
                         <input type="text" id="todo-input" className="form-control"
-                            placeholder="Något att göra..." 
+                            placeholder="Something to do..." 
                             onChange={nameHandler} value={name}/>
                     </div>
                     <div className="col-12 col-sm-2">
                         <button type="submit" id="submit-todo" className="btn w-100"
-                            onClick={submitHandler} disabled={disableSubmit}>Lägg till
+                            onClick={submitHandler} disabled={disableSubmit}>Add
                         </button>
                     </div>
                 </div>
