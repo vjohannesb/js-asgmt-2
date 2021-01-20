@@ -1,0 +1,84 @@
+.todo-list {
+    li.list-group-item {
+        background: $light-red;
+        color: rgb(73, 73, 73);
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        font-weight: bold;
+        border: none;
+        transition: 0.35s;
+        word-wrap: anywhere !important;
+
+        &:hover {
+            background: darken($light-red, 5%);
+        }
+
+        &:nth-child(2n+1) {
+            background: $darker-red;
+
+            &:hover {
+                background: lighten($darker-red, 5%);
+            }
+        }
+
+        .todo-item {
+            cursor: pointer;
+        }
+
+        .todo-name {
+            transition: 0.2s;
+        }
+
+        .delete-todo-btn {
+            font-size: 1.25rem;
+            font-weight: 300;
+            line-height: 1;
+            transition: 0.2s;
+
+            &:hover {
+                color: white;
+                transform: rotate(90deg);
+            }
+        }
+
+        .fas.fa-check {
+            display: inline;
+            opacity: 0;
+            font-weight: 500;
+            color: rgb(135, 221, 188);
+            transition: 0.35s;
+            margin-right: -0.8rem;
+        }
+
+        &.completed {
+            background: gray;
+
+            &:hover {
+                background: darken(gray, 5%);
+            }
+
+            &:nth-child(2n+1) {
+                background: darkgray;
+
+                &:hover {
+                    background: darken(darkgray, 5%);
+                }
+            }
+
+            .todo-name {
+                color: white;
+                text-decoration: line-through;
+            }
+
+            .delete-todo-btn {
+                color: white;
+            }
+
+            .fas.fa-check {
+                margin-right: .5rem;
+                opacity: 1;
+            }
+        }
+    }
+}

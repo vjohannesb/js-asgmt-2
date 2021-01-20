@@ -5,7 +5,7 @@ body {
 }
 
 .todo-form #submit-todo {
-  background: #db4c3f;
+  background: #e46256;
   font-weight: bold;
   color: white;
   border-radius: 0.5rem;
@@ -13,7 +13,7 @@ body {
 }
 
 .todo-form #submit-todo:hover {
-  background: #fa5748;
+  background: #f56558;
 }
 
 .todo-form #submit-todo:disabled {
@@ -81,6 +81,7 @@ body {
 
 .todo-list li.list-group-item {
   background: rgba(218, 92, 81, 0.5);
+  color: #494949;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -91,14 +92,13 @@ body {
       -ms-flex-pack: justify;
           justify-content: space-between;
   font-weight: bold;
-  color: #494949;
-  border: 2px solid transparent !important;
+  border: none;
   -webkit-transition: 0.35s;
   transition: 0.35s;
+  word-wrap: anywhere !important;
 }
 
 .todo-list li.list-group-item:hover {
-  border: 2px solid transparent !important;
   background: rgba(214, 72, 60, 0.5);
 }
 
@@ -108,6 +108,39 @@ body {
 
 .todo-list li.list-group-item:nth-child(2n+1):hover {
   background: rgba(222, 112, 103, 0.6);
+}
+
+.todo-list li.list-group-item .todo-item {
+  cursor: pointer;
+}
+
+.todo-list li.list-group-item .todo-name {
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+}
+
+.todo-list li.list-group-item .delete-todo-btn {
+  font-size: 1.25rem;
+  font-weight: 300;
+  line-height: 1;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+}
+
+.todo-list li.list-group-item .delete-todo-btn:hover {
+  color: white;
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
+}
+
+.todo-list li.list-group-item .fas.fa-check {
+  display: inline;
+  opacity: 0;
+  font-weight: 500;
+  color: #87ddbc;
+  -webkit-transition: 0.35s;
+  transition: 0.35s;
+  margin-right: -0.8rem;
 }
 
 .todo-list li.list-group-item.completed {
@@ -126,44 +159,16 @@ body {
   background: #9c9c9c;
 }
 
-.todo-list li.list-group-item.completed button.btn {
-  color: white;
-}
-
-.todo-list li.list-group-item.completed div {
+.todo-list li.list-group-item.completed .todo-name {
   color: white;
   text-decoration: line-through;
 }
 
+.todo-list li.list-group-item.completed .delete-todo-btn {
+  color: white;
+}
+
 .todo-list li.list-group-item.completed .fas.fa-check {
-  color: #87ddbc;
   margin-right: .5rem;
   opacity: 1;
-  -webkit-transform: rotate(0deg);
-          transform: rotate(0deg);
-}
-
-.todo-list li.list-group-item div {
-  cursor: pointer;
-}
-
-.todo-list li.list-group-item button.btn {
-  font-size: 1.25rem;
-  -webkit-transition: 0.2s;
-  transition: 0.2s;
-}
-
-.todo-list li.list-group-item button.btn:hover {
-  color: white;
-  -webkit-transform: rotate(90deg);
-          transform: rotate(90deg);
-}
-
-.todo-list li.list-group-item .fas.fa-check {
-  opacity: 0;
-  font-weight: 500;
-  color: #87ddbc;
-  -webkit-transition: 0.35s !important;
-  transition: 0.35s !important;
-  margin-right: -0.8rem;
 }

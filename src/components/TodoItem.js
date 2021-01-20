@@ -15,12 +15,11 @@ const TodoItem = ( {todo, todos, setTodos} ) => {
 
     return (
         <li className={`list-group-item p-0 ${todo.active ? '' : 'completed'}`}>
-            <div className="w-100 p-2" onClick={activeHandler}>
+            <div className="w-100 p-2 todo-item" onClick={activeHandler}>
                 <i class="fas fa-check"></i>
-                {todo.name}
-                </div>
-            <button className="btn fas fa-times"
-                onClick={deleteHandler}>
+                <span className="todo-name">{todo.name}</span>
+            </div>
+            <button className="btn fas fa-times delete-todo-btn" onClick={deleteHandler}>
             </button>
         </li>
     )
