@@ -9,7 +9,7 @@ function App() {
 
   return (
     <>
-      <main className="container-md">
+      <main className="container-md mb-5">
         <Form todos={todos} setTodos={setTodos}/>
         <List todos={todos} setTodos={setTodos} />
       </main>
